@@ -5,8 +5,8 @@ from flask import Flask, request, abort
 app = Flask(__name__)
 
 # 從環境變數中取得LINE的Channel Access Token
-line_channel_access_token = os.environ.get('LINE_CHANNEL_ACCESS_TOKEN')
-print (os.environ.get('LINE_CHANNEL_ACCESS_TOKEN'))
+line_channel_access_token = 'LINE_CHANNEL_ACCESS_TOKEN'
+print(os.environ.get('LINE_CHANNEL_ACCESS_TOKEN'))
 if line_channel_access_token is None:
   print("請設定LINE的Channel Access Token！")
   exit(1)
