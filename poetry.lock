@@ -504,6 +504,17 @@ python-versions = ">=3.6.8"
 diagrams = ["railroad-diagrams", "jinja2"]
 
 [[package]]
+name = "python-dotenv"
+version = "1.0.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "python-lsp-jsonrpc"
 version = "1.0.0"
 description = "JSON RPC 2.0 server library"
@@ -746,7 +757,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-ena
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10.0,<3.11"
-content-hash = "2363728963beb48a57ef260459cbac5ec7783c4b5bb1c6125526eb03077d0349"
+content-hash = "c2de730fbc5cf1b146151f7097a4e50782821b261c07c793501aee0b777fc8b4"
 
 [metadata.files]
 blinker = []
@@ -793,6 +804,7 @@ pycparser = []
 pyflakes = []
 pylev = []
 pyparsing = []
+python-dotenv = []
 python-lsp-jsonrpc = []
 pywin32-ctypes = []
 replit-python-lsp-server = []
